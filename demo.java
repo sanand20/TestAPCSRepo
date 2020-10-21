@@ -1,4 +1,4 @@
-public class demo {
+public class Demo {
   public static void main(String[] args){
   int n=0;
   if (args.length<1){
