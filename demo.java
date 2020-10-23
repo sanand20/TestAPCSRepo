@@ -13,7 +13,15 @@ public class Demo {
 
    return (ans);
   }
-  
+  public static String arrayDeepToString(int[][]arr){
+    String ans = "{";
+    for (int i=1; i<arr.length; i++){
+      ans += arrToString(arr[i-1]) +", ";
+    }
+    ans += arrToString(arr[arr.length-1]) + "}";
+    return ans;
+  }
+
   public static void main(String[] args){
   int n=0;
   if (args.length<1){
