@@ -1,4 +1,19 @@
 public class Demo {
+  public static String arrToString(int[] arr){
+
+    String ans= "{";
+   if (arr.length<1){
+     return ("{}");
+   }
+    for (int i=0; i<arr.length-1; i++){
+      ans+= arr[i] +", ";
+    }
+
+   ans += arr[arr.length-1] + "}";
+
+   return (ans);
+  }
+  
   public static void main(String[] args){
   int n=0;
   if (args.length<1){
