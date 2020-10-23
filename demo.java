@@ -21,6 +21,15 @@ public class Demo {
     ans += arrToString(arr[arr.length-1]) + "}";
     return ans;
   }
+  public static int[][] create2DArray(int rows, int cols, int maxValue){
+    int [][] answer = new int[rows][cols];
+    for (int i =0; i<rows; i++){
+      for (int j=0; j<cols; j++){
+        answer[i][j]=(int) (Math.random() *(maxValue+1));
+      }
+    }
+    return (answer);
+  }
 
   public static void main(String[] args){
   int n=0;
