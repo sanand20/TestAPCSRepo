@@ -30,6 +30,19 @@ public class Demo {
     }
     return (answer);
   }
+  public static int[][] create2DArrayRandomized (int rows, int cols, int maxValue){
+    int[][] arr = new int[rows][ ];
+      for (int i =0; i<rows; i++){
+        int columns= (int) (Math.random() *(cols+1));
+        arr[i] = new int[columns];
+        for (int j=0; j<columns; j++){
+          arr[i][j]= (int)(Math.random() *(maxValue+1));
+        }
+      }
+      return (arr);
+  }
+
+
 
   public static void main(String[] args){
   int n=0;
